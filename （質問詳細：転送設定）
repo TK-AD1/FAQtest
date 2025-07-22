@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>転送設定について | FAQ</title>
+<style>
+body { font-family: "Segoe UI", sans-serif; background-color: #ffffff; color: #333; padding: 40px; max-width: 800px; margin: auto; }
+h1 { font-size: 22px; margin-bottom: 20px; }
+p { line-height: 1.7; margin-bottom: 20px; }
+a { text-decoration: none; color: #0078d7; }
+</style></head>
+<body>
+<h1>転送設定について</h1>
+<p><strong>Q:</strong> セルフページで設定できることは？</p>
+<p><strong>A:</strong> 無条件転送・スケジュール転送・着信拒否（有償）などが可能です。詳しくは <a href="tel:0120874839">0120-874-839</a> までお問い合わせください。</p>
+<p><a href="office-self.html">← セルフページFAQへ戻る</a></p>
+</body>
+</html>
