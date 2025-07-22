@@ -42,27 +42,33 @@
     <div class="faq-content layer">
       
       <!-- 第3階層 -->
-      <div class="faq-toggle" onclick="toggle(this)">🔽セルフページで出来ることは？ </div>
+      <div class="faq-toggle" onclick="toggle(this)">🔽 セルフページで出来ることは？</div>
       <div class="faq-content layer">
         
         <!-- 第4階層 -->
         <p><strong>Q:</strong> セルフページで設定出来ることは？<br>
-           <strong>A:</strong> 無条件転送やスケジュール転送が設定可能です。
-           　　　　　　　　　　　着信拒否（有償）も設定可能。
-　　　　　　　　　　　　　　　　　詳細は0120-874-839へお問合せください。</p>
+           <strong>A:</strong> 無条件転送やスケジュール転送が設定可能です。<br>
+           着信拒否（有償）も設定可能です。<br>
+           詳細は 0120-874-839 へお問合せください。</p>
       </div>
-　    <!-- 他の第3階層 -->
-      <div class="faq-toggle" onclick="toggle(this)">🔽自社で設定したい場合 </div>
-      <div class="faq-content layer">
 
+      <!-- 他の第3階層 -->
+      <div class="faq-toggle" onclick="toggle(this)">🔽 自社で設定したい場合</div>
+      <div class="faq-content layer">
+        <p><strong>Q:</strong> 管理者が直接設定できますか？<br>
+           <strong>A:</strong> 管理者アカウントから可能です。サポートセンターへ事前連絡が必要です。</p>
+      </div>
 
     </div>
 
-    <!-- 他の第2階層 -->
+    <!-- 第2階層：カスコンについて（並列に変更） -->
     <div class="faq-toggle" onclick="toggle(this)">🔽 カスコンについて</div>
     <div class="faq-content layer">
-      <p><strong>Q:</strong> 設定できる機能は？<br>
-         <strong>A:</strong> ファーストスケジュール機能など。</p>
+      <div class="faq-toggle" onclick="toggle(this)">🔽 利用可能な機能</div>
+      <div class="faq-content layer">
+        <p><strong>Q:</strong> 設定できる機能は？<br>
+           <strong>A:</strong> ファーストスケジュール機能、時間帯別転送、着信グループ設定などが可能です。</p>
+      </div>
     </div>
 
   </div>
