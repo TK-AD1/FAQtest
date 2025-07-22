@@ -55,8 +55,8 @@
       <!-- 他の第3階層 -->
       <div class="faq-toggle" onclick="toggle(this)">🔽 自社で設定したい場合</div>
       <div class="faq-content layer">
-        <p><strong>Q:</strong> 管理者が直接設定できますか？<br>
-           <strong>A:</strong> 管理者アカウントから可能です。サポートセンターへ事前連絡が必要です。</p>
+        <p><strong>Q:</strong> 自社での設定は可能か？<br>
+           <strong>A:</strong> 一度オフィスラインサポートセンター 0120-874-839 へお問合せください。</p>
       </div>
 
     </div>
