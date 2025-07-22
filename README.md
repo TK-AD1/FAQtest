@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: "Segoe UI", "Helvetica Neue", sans-serif;
-      background-color: #f7f8fa;
+      background-color: #f9fafc;
       color: #333;
       padding: 0 20px 50px;
     }
@@ -18,11 +18,6 @@
       padding: 40px 20px 10px;
       background-color: #fff;
       border-bottom: 1px solid #ddd;
-    }
-
-    header img {
-      max-width: 200px;
-      height: auto;
     }
 
     h2 {
@@ -93,7 +88,6 @@
 <body>
 
   <header>
-    <img src="adjustone-logo.png" alt="アジャストワンロゴ" />
     <h2>アジャストワンFAQ</h2>
   </header>
 
