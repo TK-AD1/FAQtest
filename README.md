@@ -29,7 +29,20 @@
     }
   </style>
 </head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>多階層FAQ</title>
+  <style>
+    /* CSSはこの下に続く */
+body {
+  font-size: 16px;
+}
+.faq-toggle {
+  padding: 12px; /* タップしやすくする */
+  font-size: 16px;
+}
+  
+  <body>
 
   <h2>多階層 FAQ</h2>
 
