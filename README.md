@@ -8,25 +8,27 @@
     body {
       margin: 0;
       font-family: "Segoe UI", "Helvetica Neue", sans-serif;
-      background: linear-gradient(to right, #101923, #1a2738);
-      color: #1c1c1c;
+      background-color: #f7f8fa;
+      color: #333;
       padding: 0 20px 50px;
     }
 
     header {
       text-align: center;
       padding: 40px 20px 10px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
     }
 
     header img {
-      max-width: 220px;
+      max-width: 200px;
       height: auto;
     }
 
     h2 {
-      font-size: 28px;
+      font-size: 26px;
       margin-top: 10px;
-      color: #f0f4f8;
+      color: #333;
       letter-spacing: 1px;
     }
 
@@ -34,14 +36,12 @@
       display: block;
       width: 100%;
       max-width: 400px;
-      margin: 30px auto 30px;
+      margin: 30px auto;
       padding: 12px 16px;
-      border-radius: 10px;
+      border-radius: 8px;
       font-size: 16px;
-      border: none;
-      background-color: #ffffff;
-      color: #333;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      border: 1px solid #ccc;
+      background-color: #fff;
     }
 
     .faq-toggle {
@@ -49,45 +49,34 @@
       margin: 15px auto;
       padding: 18px 20px;
       font-weight: 600;
-      font-size: 17px;
-      border-radius: 12px;
+      font-size: 16px;
+      border-radius: 10px;
       cursor: pointer;
       max-width: 800px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: background 0.3s ease;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
     .faq-toggle:hover {
-      transform: scale(1.02);
-      background-color: #f1f3f5;
+      background-color: #f0f0f0;
     }
 
     .faq-content {
       display: none;
       padding: 20px;
-      background-color: #f9f9fb;
+      background-color: #fff;
       border-left: 4px solid #00acc1;
-      border-radius: 0 0 12px 12px;
-      max-width: 760px;
+      border-radius: 0 0 10px 10px;
+      max-width: 780px;
       margin: -10px auto 30px;
       box-shadow: inset 0 0 4px rgba(0,0,0,0.04);
-      animation: fadeIn 0.3s ease;
     }
 
     .faq-content p {
       margin: 0;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-5px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .layer {
-      margin-left: 20px;
     }
 
     @media screen and (max-width: 600px) {
@@ -104,45 +93,40 @@
 <body>
 
   <header>
-    <img src="logo.png" alt="アジャストワンロゴ" />
+    <img src="adjustone-logo.png" alt="アジャストワンロゴ" />
     <h2>アジャストワンFAQ</h2>
   </header>
 
   <input type="text" id="searchBox" placeholder="🔍 キーワードで検索" oninput="filterFaq()" />
 
-  <!-- FAQ構造開始 -->
+  <!-- FAQリスト -->
   <div class="faq-toggle" onclick="toggle(this)">オフィスラインについて 🔽</div>
-  <div class="faq-content layer">
-
+  <div class="faq-content">
     <div class="faq-toggle" onclick="toggle(this)">セルフページについて 🔽</div>
-    <div class="faq-content layer">
-
+    <div class="faq-content">
       <div class="faq-toggle" onclick="toggle(this)">セルフページで出来ることは？ 🔽</div>
-      <div class="faq-content layer">
+      <div class="faq-content">
         <p><strong>Q:</strong> セルフページで設定できることは？<br>
         <strong>A:</strong> 無条件転送・スケジュール転送・着信拒否（有償）などが可能です。<br>
         詳しくは 0120-874-839 へお問い合わせください。</p>
       </div>
 
       <div class="faq-toggle" onclick="toggle(this)">自社で設定されたい場合 🔽</div>
-      <div class="faq-content layer">
+      <div class="faq-content">
         <p><strong>Q:</strong> 自社で設定したい場合<br>
         <strong>A:</strong> 一度 0120-874-839 までお問い合わせください。</p>
       </div>
-
     </div>
 
     <div class="faq-toggle" onclick="toggle(this)">カスコンについて 🔽</div>
-    <div class="faq-content layer">
+    <div class="faq-content">
       <div class="faq-toggle" onclick="toggle(this)">利用可能な機能 🔽</div>
-      <div class="faq-content layer">
+      <div class="faq-content">
         <p><strong>Q:</strong> 設定できる機能は？<br>
         <strong>A:</strong> ファーストスケジュール・着信先変更などが利用可能です。</p>
       </div>
     </div>
-
   </div>
-  <!-- FAQ構造終了 -->
 
 <script>
   function toggle(element) {
@@ -156,8 +140,8 @@
 
   function filterFaq() {
     const keyword = document.getElementById("searchBox").value.toLowerCase();
-    const sections = document.querySelectorAll(".faq-toggle, .faq-content");
-    sections.forEach(el => {
+    const elements = document.querySelectorAll(".faq-toggle, .faq-content");
+    elements.forEach(el => {
       el.style.display = el.textContent.toLowerCase().includes(keyword) ? "" : "none";
     });
   }
