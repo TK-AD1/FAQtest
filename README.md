@@ -61,8 +61,8 @@
     <!-- 他の第2階層 -->
     <div class="faq-toggle" onclick="toggle(this)">🔽 カスコンについて</div>
     <div class="faq-content layer">
-      <p><strong>Q:</strong> 認証アプリは何を使えばよい？<br>
-         <strong>A:</strong> Google AuthenticatorまたはMicrosoft Authenticatorが利用可能です。</p>
+      <p><strong>Q:</strong> 設定できる機能は？<br>
+         <strong>A:</strong> ファーストスケジュール機能など。</p>
     </div>
 
   </div>
