@@ -51,7 +51,7 @@
            　　　　　　　　　　　着信拒否（有償）も設定可能。
 　　　　　　　　　　　　　　　　　詳細は0120-874-839へお問合せください。</p>
       </div>
-    <!-- 他の第3階層 -->
+    <!-- 他の第2階層 -->
       <div class="faq-toggle" onclick="toggle(this)">🔽自社で設定したい場合 </div>
       <div class="faq-content layer">
 
