@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>カスコン | 質問一覧</title>
+<style>
+body { font-family: "Segoe UI", sans-serif; background: #fff; color: #333; padding: 40px; }
+h1 { text-align: center; font-size: 24px; margin-bottom: 30px; }
+.question { display: block; background-color: #f9f9f9; padding: 16px; margin: 10px auto; max-width: 700px;
+border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-decoration: none; color: #333; font-weight: 500; transition: 0.2s; }
+.question:hover { background-color: #eaeaea; }
+</style></head>
+<body>
+<h1>カスコン｜FAQ</h1>
+<a href="faq-group.html" class="question">着信グループの設定</a>
+<a href="office-line.html" style="display:block; text-align:center; margin-top:30px;">← オフィスラインへ戻る</a>
+</body>
+</html>
