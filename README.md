@@ -34,26 +34,32 @@
   <h2>多階層 FAQ</h2>
 
   <!-- 第1階層 -->
-  <div class="faq-toggle" onclick="toggle(this)">🔽 ログインについて</div>
+  <div class="faq-toggle" onclick="toggle(this)">🔽 オフィスラインについて</div>
   <div class="faq-content layer">
     
     <!-- 第2階層 -->
-    <div class="faq-toggle" onclick="toggle(this)">🔽 ID／パスワード関連</div>
+    <div class="faq-toggle" onclick="toggle(this)">🔽 セルフページについて</div>
     <div class="faq-content layer">
       
       <!-- 第3階層 -->
-      <div class="faq-toggle" onclick="toggle(this)">🔽 パスワードを忘れた場合</div>
+      <div class="faq-toggle" onclick="toggle(this)">🔽セルフページで出来ることは？ </div>
       <div class="faq-content layer">
         
         <!-- 第4階層 -->
-        <p><strong>Q:</strong> 再設定方法は？<br>
-           <strong>A:</strong> ログイン画面の「パスワードをお忘れですか？」をクリックして、登録メールアドレスを入力してください。</p>
+        <p><strong>Q:</strong> セルフページで設定出来ることは？<br>
+           <strong>A:</strong> 無条件転送やスケジュール転送が設定可能です。
+           　　　　　　　　　　　着信拒否（有償）も設定可能。
+　　　　　　　　　　　　　　　　　詳細は0120-874-839へお問合せください。</p>
       </div>
+    <!-- 他の第3階層 -->
+      <div class="faq-toggle" onclick="toggle(this)">🔽自社で設定したい場合 </div>
+      <div class="faq-content layer">
+
 
     </div>
 
     <!-- 他の第2階層 -->
-    <div class="faq-toggle" onclick="toggle(this)">🔽 2段階認証の設定</div>
+    <div class="faq-toggle" onclick="toggle(this)">🔽 カスコンについて</div>
     <div class="faq-content layer">
       <p><strong>Q:</strong> 認証アプリは何を使えばよい？<br>
          <strong>A:</strong> Google AuthenticatorまたはMicrosoft Authenticatorが利用可能です。</p>
