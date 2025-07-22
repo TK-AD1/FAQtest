@@ -1,74 +1,76 @@
-# FAQtest
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>FAQ一覧</title>
+  <title>多階層FAQ</title>
   <style>
     body {
       font-family: sans-serif;
-      line-height: 1.6;
       padding: 20px;
     }
-    .faq-category {
-      margin-bottom: 20px;
+    .layer {
+      margin-left: 20px;
+      margin-top: 10px;
     }
-    .faq-header {
-      background-color: #f0f0f0;
+    .faq-toggle {
+      background-color: #e0e0e0;
+      padding: 8px;
+      margin-top: 5px;
       cursor: pointer;
-      padding: 10px;
       font-weight: bold;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+      border-radius: 4px;
     }
     .faq-content {
       display: none;
       padding: 10px;
+      background-color: #f9f9f9;
       border-left: 3px solid #0078D7;
-      margin-top: 5px;
-      background-color: #fafafa;
       border-radius: 4px;
     }
   </style>
 </head>
 <body>
 
-  <h2>よくあるご質問（FAQ）</h2>
+  <h2>多階層 FAQ</h2>
 
-  <div class="faq-category">
-    <div class="faq-header" onclick="toggleFaq(this)">🔽 ログインについて</div>
-    <div class="faq-content">
-      <p><strong>Q:</strong> パスワードを忘れた場合は？<br>
-         <strong>A:</strong> 「パスワードをお忘れですか？」から再設定できます。</p>
+  <!-- 第1階層 -->
+  <div class="faq-toggle" onclick="toggle(this)">🔽 ログインについて</div>
+  <div class="faq-content layer">
+    
+    <!-- 第2階層 -->
+    <div class="faq-toggle" onclick="toggle(this)">🔽 ID／パスワード関連</div>
+    <div class="faq-content layer">
+      
+      <!-- 第3階層 -->
+      <div class="faq-toggle" onclick="toggle(this)">🔽 パスワードを忘れた場合</div>
+      <div class="faq-content layer">
+        
+        <!-- 第4階層 -->
+        <p><strong>Q:</strong> 再設定方法は？<br>
+           <strong>A:</strong> ログイン画面の「パスワードをお忘れですか？」をクリックして、登録メールアドレスを入力してください。</p>
+      </div>
+
     </div>
+
+    <!-- 他の第2階層 -->
+    <div class="faq-toggle" onclick="toggle(this)">🔽 2段階認証の設定</div>
+    <div class="faq-content layer">
+      <p><strong>Q:</strong> 認証アプリは何を使えばよい？<br>
+         <strong>A:</strong> Google AuthenticatorまたはMicrosoft Authenticatorが利用可能です。</p>
+    </div>
+
   </div>
 
-  <div class="faq-category">
-    <div class="faq-header" onclick="toggleFaq(this)">🔽 支払い方法について</div>
-    <div class="faq-content">
-      <p><strong>Q:</strong> 支払方法の変更は？<br>
-         <strong>A:</strong> マイページから変更できます。次回請求に反映されます。</p>
-    </div>
-  </div>
-
-  <div class="faq-category">
-    <div class="faq-header" onclick="toggleFaq(this)">🔽 アカウント設定について</div>
-    <div class="faq-content">
-      <p><strong>Q:</strong> 登録メールアドレスは変更できる？<br>
-         <strong>A:</strong> アカウント設定で変更可能です。本人確認が必要です。</p>
-    </div>
-  </div>
-
-  <script>
-    function toggleFaq(header) {
-      const content = header.nextElementSibling;
-      const isVisible = content.style.display === "block";
-      content.style.display = isVisible ? "none" : "block";
-      header.textContent = isVisible
-        ? header.textContent.replace("🔼", "🔽")
-        : header.textContent.replace("🔽", "🔼");
-    }
-  </script>
+<script>
+function toggle(element) {
+  const next = element.nextElementSibling;
+  const isVisible = next.style.display === "block";
+  next.style.display = isVisible ? "none" : "block";
+  element.textContent = isVisible
+    ? element.textContent.replace("🔼", "🔽")
+    : element.textContent.replace("🔽", "🔼");
+}
+</script>
 
 </body>
 </html>
